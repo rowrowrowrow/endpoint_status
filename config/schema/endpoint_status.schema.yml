@@ -1,0 +1,45 @@
+endpoint_status.endpoint_status.*:
+  type: config_entity
+  label: 'Endpoint Status Config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uri:
+      type: uri
+      label: 'Uri'
+    enabled:
+      type: boolean
+      label: 'Boolean'
+    status:
+      type: string
+      label: 'Status'
+    message:
+      type: string
+      label: 'Message'
+    processor:
+      type: string
+      label: 'Processor'
+    email_subscribers:
+      type: sequence
+      label: 'Subscribers'
+      orderby: value
+      sequence:
+        type: string
+        label: 'Subscriber'
+
+# Set configuration defaults. This schema describes the endpoint_status.settings
+# config. The defaults for this config are set in
+# config/install/endpoint_status.settings.yml and then used by
+# \Drupal\endpoint_status\Form\EndpointStatusCronForm.
+# @see https://www.drupal.org/node/1905070
+endpoint_status.settings:
+  type: config_object
+  label: 'Endpoint Status Cron settings'
+  mapping:
+    interval:
+      type: integer
+      label: 'Period between cron runs'

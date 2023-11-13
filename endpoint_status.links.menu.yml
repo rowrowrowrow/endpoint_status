@@ -1,0 +1,19 @@
+entity.endpoint_status.collection:
+  title: 'Endpoint Status'
+  parent: system.admin_config_system
+  description: 'Configure Endpoint Status'
+  route_name: entity.endpoint_status.collection
+
+
+endpoint_status.cron.description:
+  title: 'Endpoint Status Cron'
+  parent: entity.endpoint_status.collection
+  description: 'Configure Endpoint Status Cron'
+  route_name: endpoint_status.cron.description
+
+
+endpoint_status.plugin.description:
+  title: 'Endpoint Status Processor Plugins'
+  parent: entity.endpoint_status.collection
+  description: 'Endpoint Status Processor Plugins'
+  route_name: endpoint_status.plugin.description

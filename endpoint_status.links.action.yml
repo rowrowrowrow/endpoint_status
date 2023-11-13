@@ -1,0 +1,5 @@
+entity.endpoint_status.add_form:
+  route_name: 'entity.endpoint_status.add_form'
+  title: 'Add Endpoint Status'
+  appears_on:
+    - entity.endpoint_status.collection

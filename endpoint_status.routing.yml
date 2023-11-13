@@ -1,0 +1,47 @@
+entity.endpoint_status.collection:
+  path: '/admin/config/system/endpoint_status'
+  defaults:
+    _entity_list: 'endpoint_status'
+    _title: 'Endpoint Status configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.endpoint_status.add_form:
+  path: '/admin/config/system/endpoint_status/add'
+  defaults:
+    _entity_form: 'endpoint_status.add'
+    _title: 'Add endpoint_status'
+  requirements:
+    _permission: 'administer site configuration'
+
+endpoint_status.cron.description:
+  path: '/admin/config/system/endpoint_status/cron'
+  defaults:
+    _form: '\Drupal\endpoint_status\Form\EndpointStatusCronForm'
+    _title: 'Endpoint Status Cron'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.endpoint_status.edit_form:
+  path: '/admin/config/system/endpoint_status/{endpoint_status}'
+  defaults:
+    _entity_form: 'endpoint_status.edit'
+    _title: 'Edit endpoint_status'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.endpoint_status.delete_form:
+  path: '/admin/config/system/endpoint_status/{endpoint_status}/delete'
+  defaults:
+    _entity_form: 'endpoint_status.delete'
+    _title: 'Delete endpoint_status'
+  requirements:
+    _permission: 'administer site configuration'
+
+endpoint_status.plugin.description:
+  path: '/admin/config/system/endpoint_status/plugin'
+  defaults:
+    _controller: '\Drupal\endpoint_status\Controller\EndpointStatusProcessorPluginTypeController::description'
+    _title: 'Endpoint Status Processors'
+  requirements:
+    _permission: 'administer site configuration'

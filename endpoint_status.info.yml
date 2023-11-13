@@ -1,0 +1,9 @@
+name: Endpoint Status
+description: 'Regularly check the status of arbitrary endpoints from Drupal.'
+package: Web services
+version: VERSION
+configure: entity.endpoint_status.collection
+type: module
+core_version_requirement: ^9.4 || ^10
+dependencies:
+  - drupal:node

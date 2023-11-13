@@ -1,0 +1,4 @@
+# Default form values for \Drupal\endpoint_status\Form\EndpointStatusCronForm.
+# @see examples/endpoint_status/config/schema/endpoint_status.schema.yml
+# @see \Drupal\endpoint_status\Form\EndpointStatusCronForm::getEditableConfigNames()
+interval: 60
