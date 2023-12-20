@@ -4,6 +4,6 @@ package: Web services
 version: VERSION
 configure: entity.endpoint_status.collection
 type: module
-core_version_requirement: ^9.4 || ^10
+core_version_requirement: ^10
 dependencies:
   - drupal:node
