@@ -1,0 +1,23 @@
+{
+  "name": "drupal/endpoint_status",
+  "description": "Regularly check the status of arbitrary endpoints from Drupal.",
+  "type": "drupal-module",
+  "homepage": "https://drupal.org/project/endpoint_status",
+  "require": {
+    "drupal/core": "^10",
+    "php": ">=8.1",
+    "cweagans/composer-patches": "^1.7"
+  },
+  "extra": {
+    "patches": {
+      "drupal/core": {
+          "Issue #3296190": "https://www.drupal.org/files/issues/2023-10-20/3296190-support-email-multiple-10.patch"
+      }
+  }
+  },
+  "config": {
+    "allow-plugins": {
+      "cweagans/composer-patches": true
+    }
+  }
+}
